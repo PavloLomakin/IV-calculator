@@ -579,7 +579,7 @@
                 stockMetrics: "Stock Metrics",
                 metricsPlaceholder: "Enter a stock symbol and click \"Calculate\" to view metrics.",
                 currentPrice: "Current Price",
-                marketCap: "Market Cap, M",
+                marketCap: "Market Cap",
                 peRatio: "P/E Ratio",
                 forwardPE: "Forward P/E",
                 week52Range: "52-Week Range",
@@ -651,7 +651,7 @@
                 stockMetrics: "Показатели Акции",
                 metricsPlaceholder: "Введите тикер акции и нажмите \"Рассчитать\", чтобы увидеть показатели.",
                 currentPrice: "Текущая Цена",
-                marketCap: "Рыночная Капитализация, М",
+                marketCap: "Рыночная Капитализация",
                 peRatio: "P/E Коэффициент",
                 forwardPE: "Прогнозный P/E",
                 week52Range: "Диапазон за 52 недели",
@@ -778,7 +778,7 @@
                 if (marketCap >= 1000000000) {
                     return '$' + (marketCap / 1000000000).toFixed(2) + 'B';
                 } else if (marketCap >= 1000000) {
-                    return '$' + (marketCap / 1000000).toFixed(2) + 'M';
+                    return '$' + (marketCap / 1000000).toFixed(2) + 'B';
                 }
                 return '$' + marketCap.toFixed(2);
             }
@@ -1090,6 +1090,7 @@ Intrinsic Value = ${base.discountedFutureValues.join(' + ')} + $${base.discounte
     </script>
 </body>
 </html>
+
 
 
 
